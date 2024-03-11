@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './first-component.component.css'
 })
 export class FirstComponentComponent {
-
+  name:string = 'Guilherme';
+  constructor(){
+    
+  }
 }
