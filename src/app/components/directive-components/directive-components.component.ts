@@ -9,5 +9,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './directive-components.component.css',
 })
 export class DirectiveComponentsComponent{
+  classes:Array<string>=['green-title', 'font-1-xs']
 
 }
