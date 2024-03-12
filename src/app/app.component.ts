@@ -5,11 +5,12 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { DirectiveComponentsComponent } from './components/directive-components/directive-components.component';
 import { CommonModule } from '@angular/common';
 import { ConditionalComponentsComponent } from './components/conditional-components/conditional-components.component';
+import { EventsComponentsComponent } from './components/events-components/events-components.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule, FirstComponentComponent, ParentDataComponent, DirectiveComponentsComponent,ConditionalComponentsComponent],
+  imports: [RouterOutlet,CommonModule, FirstComponentComponent, ParentDataComponent, DirectiveComponentsComponent,ConditionalComponentsComponent, EventsComponentsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
