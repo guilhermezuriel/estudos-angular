@@ -1,1 +1,8 @@
-<p>conditional-components works!</p>
+<div class="class">
+  <h1>Conditional Components</h1>
+  <p *ngIf="canShow">Permito a ser exibido</p>
+  <h3 *ngIf="name === 'Guilherme'; else nameNotFound">Meu nome é Guilherme</h3>
+  <ng-template #nameNotFound>
+    <div>Nome não encontrado</div>
+  </ng-template>
+</div>
