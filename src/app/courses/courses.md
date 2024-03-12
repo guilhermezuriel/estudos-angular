@@ -9,3 +9,7 @@ https://www.coursera.org/learn/algorithms-part2
 # Programa de cursos integrados Introdução à ciência da computação e programação
 
 https://www.coursera.org/specializations/introduction-computer-science-programming
+
+# Programa de cursos integrados Object Oriented Programming
+
+https://www.coursera.org/specializations/object-oriented-programming-s12n
