@@ -6,11 +6,12 @@ import { DirectiveComponentsComponent } from './components/directive-components/
 import { CommonModule } from '@angular/common';
 import { ConditionalComponentsComponent } from './components/conditional-components/conditional-components.component';
 import { EventsComponentsComponent } from './components/events-components/events-components.component';
+import { TwoBindingComponentsComponent } from './components/two-binding-components/two-binding-components.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule, FirstComponentComponent, ParentDataComponent, DirectiveComponentsComponent,ConditionalComponentsComponent, EventsComponentsComponent],
+  imports: [RouterOutlet,CommonModule, FirstComponentComponent, ParentDataComponent, DirectiveComponentsComponent,ConditionalComponentsComponent, EventsComponentsComponent, TwoBindingComponentsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
