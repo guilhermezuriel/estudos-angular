@@ -8,11 +8,12 @@ import { ConditionalComponentsComponent } from './components/conditional-compone
 import { EventsComponentsComponent } from './components/events-components/events-components.component';
 import { TwoBindingComponentsComponent } from './components/two-binding-components/two-binding-components.component';
 import { EventEmitterComponentComponent } from './components/event-emitter-component/event-emitter-component.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule, FirstComponentComponent, ParentDataComponent, DirectiveComponentsComponent,ConditionalComponentsComponent, EventsComponentsComponent, TwoBindingComponentsComponent, EventEmitterComponentComponent],
+  imports: [RouterOutlet,CommonModule, FirstComponentComponent, ParentDataComponent, DirectiveComponentsComponent,ConditionalComponentsComponent, EventsComponentsComponent, TwoBindingComponentsComponent, EventEmitterComponentComponent, ListRenderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
