@@ -1,27 +1,48 @@
-# AngularEstrutura
+<h1>Angular</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+<h2>Estudos em Angular</h2>
 
-## Development server
+Instalando o CLI do angular
+: npm install -g @angular/cli
+<br>Criando projetos: ng new < name >
+<br>Criando componentes: ng generate component <dir/name>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<br>Dados no template<br>
+< h1 > {{name}} </ h1 >
 
-## Code scaffolding
+CSS no Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Global: styles.css na pasta src
+- Scoped: Nível de Componente
 
-## Build
+<a href="./src/app/components/parent-data">Compartilhamento de dados</a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- @Input -> Componente pai, para o componente filho
+- @Output -> Componente filho, para o componente pai
 
-## Running unit tests
+<a href="./src/app/components/directive-components">Diretivas</a>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Diretivas de estilo: [ngStyle]="{'font-size':'12px'}"
+- Diretivas de classes: [ngClasses]="classes" | classes: Array<>
+- Diretivas condicionais
+  <textarea>
+  //Component.ts
+  canShow:boolean = true;
+  name:string = 'Jonathan'
+  //Template.html
+  <p *ngIf="canShow">Permito a ser exibido</p>
+  <h3 *ngIf="name === 'Guilherme'"></h3>
+  </textarea>
 
-## Running end-to-end tests
+<a href="./src/app/components/events-components/">Eventos no Angular</a>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Evento de click
+  <textarea>
+  //Component.ts
+  show:boolean = true;
+  showMessage():void{
+  this.show = !(this.show)
+  }
+  //Template.html
+  <button (click)="showMessage()">
+  </textarea>
