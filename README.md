@@ -76,6 +76,7 @@ this.allowButton = true;
 
 {{dado|pipeOperator}}
 <textarea>
+
 <div>
 <h2>{{texto | uppercase}}</h2>
 </div>
@@ -86,3 +87,10 @@ this.allowButton = true;
 - Geralmente ficam as requisições da APIs que utilizamos no projeto
 - Criamos com : ng generate service < nome >
 - Importar no componente e iniciar no construtor -> Acesso aos métodos
+
+## Router
+
+- Criar um arquivo para declarar nossas rotas
+- Importamos os módulos RouterModule e Routes
+- Após a definição, as rotas precisam ser importadas em app.module.ts
+- No template principal, criamos as rotas e substituímos os componentes por:< router-outlet >
