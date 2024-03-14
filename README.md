@@ -36,13 +36,29 @@ CSS no Angular
 
 <a href="./src/app/components/events-components/">Eventos no Angular</a>
 
-- Evento de click
-  <textarea>
-  //Component.ts
-  show:boolean = true;
-  showMessage():void{
-  this.show = !(this.show)
-  }
-  //Template.html
-  <button (click)="showMessage()">
-  </textarea>
+Evento de click
+<textarea>
+//Component.ts
+show:boolean = true;
+showMessage():void{
+this.show = !(this.show)
+}
+//Template.html
+<button (click)="showMessage()">
+</textarea>
+
+<br>Property Binding<br>
+<textarea>
+//Template.html
+<button class="btn btn-primary" [disabled]="allowButton">Clique Aqui
+</button>
+
+<p [innerText]="allowButton">Text</p>
+//Component.ts
+allowButton = false;
+constructor(){
+setTimeout(()=>{
+this.allowButton = true;
+}, 2000)
+}
+</textarea>
