@@ -7,20 +7,21 @@ Instalando o CLI do angular
 <br>Criando projetos: ng new < name >
 <br>Criando componentes: ng generate component <dir/name>
 
-<br>Dados no template<br>
-< h1 > {{name}} </ h1 >
+## Dados no template
 
-CSS no Angular
+- < h1 > {{name}} </ h1 >
+
+## CSS no Angular
 
 - Global: styles.css na pasta src
 - Scoped: Nível de Componente
 
-<a href="./src/app/components/parent-data">Compartilhamento de dados</a>
+## <a href="./src/app/components/parent-data">Compartilhamento de dados</a>
 
 - @Input -> Componente pai, para o componente filho
 - @Output -> Componente filho, para o componente pai
 
-<a href="./src/app/components/directive-components">Diretivas</a>
+## <a href="./src/app/components/directive-components">Diretivas</a>
 
 - Diretivas de estilo: [ngStyle]="{'font-size':'12px'}"
 - Diretivas de classes: [ngClasses]="classes" | classes: Array<>
@@ -34,24 +35,32 @@ CSS no Angular
   <h3 *ngIf="name === 'Guilherme'"></h3>
   </textarea>
 
-<a href="./src/app/components/events-components/">Eventos no Angular</a>
+## Renderização de listas
 
-Evento de click
-<textarea>
-//Component.ts
-show:boolean = true;
-showMessage():void{
-this.show = !(this.show)
-}
-//Template.html
-<button (click)="showMessage()">
-</textarea>
+  <textarea>
+  \*ngFor="let item of items"  
+  </textarea>
 
-<br>Property Binding<br>
+## <a href="./src/app/components/events-components/">Eventos no Angular</a>
+
+## Evento de click
+
+- <textarea>
+  //Component.ts
+  show:boolean = true;
+  showMessage():void{
+  this.show = !(this.show)
+  }
+  //Template.html
+  <button (click)="showMessage()">
+  </textarea>
+
+## Property Binding
+
 <textarea>
-//Template.html
-<button class="btn btn-primary" [disabled]="allowButton">Clique Aqui
-</button>
+  //Template.html
+  <button class="btn btn-primary" [disabled]="allowButton">Clique Aqui
+  </button>
 
 <p [innerText]="allowButton">Text</p>
 //Component.ts
@@ -62,3 +71,18 @@ this.allowButton = true;
 }, 2000)
 }
 </textarea>
+
+## Pipe Operators
+
+{{dado|pipeOperator}}
+<textarea>
+<div>
+<h2>{{texto | uppercase}}</h2>
+</div>
+</textarea>
+
+## Services
+
+- Geralmente ficam as requisições da APIs que utilizamos no projeto
+- Criamos com : ng generate service < nome >
+- Importar no componente e iniciar no construtor -> Acesso aos métodos

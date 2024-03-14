@@ -22,6 +22,6 @@ export class ListRenderComponent {
   constructor(private listService:ListService){}
 
   removeAnimal(animals:Animal){
-    console.log('Removendo animal...');
+    this.listService.remove(this.animals, this.animal)
   }
 }
