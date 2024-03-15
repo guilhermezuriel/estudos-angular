@@ -45,7 +45,7 @@ Instalando o CLI do angular
 
 ## Evento de click
 
-- <textarea>
+ <textarea>
   //Component.ts
   show:boolean = true;
   showMessage():void{
@@ -97,4 +97,14 @@ this.allowButton = true;
 
 ## Requisições HTTP
 
--
+- Requisições HTTP são realizadas nos services
+- Importamos dois pacotes: HttpClient e HttpHeaders
+- Simulação com: json-server
+- É necessário inicializar o módulo HttpClientModule em app.module.ts
+
+## Rotas dinâmicas
+
+- Utilizamos rotas dinâmicas no nosso router para regastar um dado do banco
+- Baseado no id do item teremos a seleção de dado no banco, geralmente o id vem pela URL
+- Para resgatar parâmetros da URL vamos utilizar o ActivedRoute, um módulo de Angular
+- A lógica para requisição HTTP ficará no service

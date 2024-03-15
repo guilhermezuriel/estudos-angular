@@ -1,3 +1,3 @@
 <h1>Renderizando listas</h1>
-<li *ngFor="let animal of animals">Nome: {{animal.name}} - tipo {{animal.type}}</li>
+<li *ngFor="let animal of animals"><a routerLink="/animals/{{animal.id}}">Nome:</a> {{animal.name}} - tipo {{animal.type}}</li>
 <button (click)="removeAnimal(animal)"></button>

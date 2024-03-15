@@ -1,10 +1,10 @@
 {
   "animals": [
     [
-      { "name": "Tuco", "type": "Cachorro" },
-      { "name": "Magna", "type": "Gato" },
-      { "name": "Galileu", "type": "Cachorro" },
-      { "name": "Alfredo", "type": "Gato" }
+      { "id": 1, "name": "Tuco", "type": "Cachorro" },
+      { "id": 2, "name": "Magna", "type": "Gato" },
+      { "id": 3, "name": "Galileu", "type": "Cachorro" },
+      { "id": 4, "name": "Alfredo", "type": "Gato" }
     ]
   ]
 }

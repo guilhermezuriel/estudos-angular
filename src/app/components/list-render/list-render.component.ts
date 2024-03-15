@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class ListRenderComponent {
   animals:Array<Animal>=[]
-  animal:Animal = {
+  animal:Animal = {id:0,
     name:'Teste', type:'Algo'
   }
   constructor(private listService:ListService){}
