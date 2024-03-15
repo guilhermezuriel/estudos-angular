@@ -108,3 +108,12 @@ this.allowButton = true;
 - Baseado no id do item teremos a seleção de dado no banco, geralmente o id vem pela URL
 - Para resgatar parâmetros da URL vamos utilizar o ActivedRoute, um módulo de Angular
 - A lógica para requisição HTTP ficará no service
+
+## Forms
+
+- Data binding
+- Change tracking
+- Validation
+- Visual feedback
+- Error messages
+- Form submission
