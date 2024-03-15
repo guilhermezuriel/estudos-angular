@@ -94,3 +94,7 @@ this.allowButton = true;
 - Importamos os módulos RouterModule e Routes
 - Após a definição, as rotas precisam ser importadas em app.module.ts
 - No template principal, criamos as rotas e substituímos os componentes por:< router-outlet >
+
+## Requisições HTTP
+
+-
